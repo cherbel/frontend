@@ -5,6 +5,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { AtlasComponent } from '../app/modules/atlas/atlas.component';
 
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
@@ -37,6 +38,7 @@ import { AppComponent } from './app.component';
     UserBubbleComponent,
     SharedNgContainerComponent,
     ErrorPageComponent,
+    AtlasComponent
   ],
   imports: [
     NgbModule,
