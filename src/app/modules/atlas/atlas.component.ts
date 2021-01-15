@@ -29,6 +29,7 @@ export class AtlasComponent implements OnInit {
     {role: 'Barista', username: 'Zachary.Macomber', photoURL: '/profiles/1920/966-2048546.jpg', full_name: 'Zachary Macomber'},
     {role: 'Barista', username: 'Zack.Hoffer', photoURL: '/profiles/1920/1739-2037147.jpg', full_name: 'Zack Hoffer'}
   ];
+  employeeDisplayed = true;
 
   constructor(private hermesService: HermesService, private elementRef: ElementRef) {
     // sets background color
@@ -58,5 +59,29 @@ export class AtlasComponent implements OnInit {
       ]
     };
     this.map = new google.maps.Map(this.mapElement.nativeElement, mapProperties);
+  }
+
+  displayEmployee() {
+    this.employeeDisplayed = true;
+  }
+
+  displayInstagram() {
+    this.employeeDisplayed = false;
+  }
+
+  baristaButtonStyle() {
+    return {
+      'background-color': this.employeeDisplayed ? '#fff6eb' : 'white',
+      'border-style': this.employeeDisplayed ? 'none' : 'solid',
+      'border-width': '0.1px'
+    };
+  }
+
+  instagramButtonStyle() {
+    return {
+      'background-color': this.employeeDisplayed ? 'white' : '#fff6eb',
+      'border-style': this.employeeDisplayed ? 'solid' : 'none',
+      'border-width': '0.1px'
+    };
   }
 }

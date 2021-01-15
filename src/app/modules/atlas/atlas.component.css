@@ -1,37 +1,9 @@
 /* TODO: this file needs to be cleaned */
 
-.aswwu-logo {
-  -webkit-filter: drop-shadow(5px 5px 30px rgba(0,0,0,0.5)); filter: drop-shadow(5px 5px 30px rgba(0,0,0,0.5));
-}
-
-.text-white {
-  color: white;
-}
-
-#aswwuLogo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-image 2s ease-in 1s;
-  background: black;
-  background-size: cover;
-  height:95vh;
-  width: 100%;
-}
-#aswwuLogo img{
-  width: 100%;
-  max-width: 800px;
-  height: auto;
-  padding: 0 20px 0 20px;
-}
-
 /*Section */
 section {
   padding-top: 20px;
   padding-bottom: 50px;
-}
-section.dark {
-  background-color: #f4f4f4;
 }
 hr {
   width: 36px;
@@ -40,75 +12,66 @@ hr {
   margin-top:1.2em;
   margin-bottom:1.5em;
 }
-
-
-/*Parallax window attributes*/
-.parallax-window {
-  height: 400px;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-}
-.parallax-center {
+#main-picture-section {
+  padding-top: 0px;
   position: relative;
-
+  width: 100%;
+  height: 920px;
+  z-index: 1;
+  background: black;
 }
-
-/*Random utilities*/
-.m-x-auto {
-  display: block;
-}
-
-.logo {
-  max-width: 400px;
-  width:100%!important;
-  height: auto;
-  margin-bottom: .8em;
-}
-
-.full_height_parent{
-  display: flex;
-}
-.full_height_child {
-  align-items: stretch;
-}
-
-/*Giant link styles */
-.giant-link {
-  color: white;
-  border-radius: 0;
-  border-width: 3px;
-  border-color:white;
-  transition: color .2s, border-color .2s;
-  font-weight: bold;
-}
-.giant-white {
-  color: white;
-  border-color: white;
-}
-.giant-black {
-  color: #373a3c;
-  border-color: #373a3c;
-}
-.giant-link:hover, .giant-link:active, .giant-link:focus {
-  color: #8c8c8c!important;
-  background-color: transparent!important;
-  border-color: #8c8c8c!important;
-}
-
-.center-content {
+#atlas-background{
+  position: absolute;
+  background: url(https://i.ibb.co/zWdm8vW/i-MFf-NHTs-X3.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 920px;
+  z-index: -1;
+  opacity: .4;
+  top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.text-giant {
-  font-size: 3rem;
-  font-weight: 700;
-  text-align: center;
+#atlas-logo {
+  position: absolute;
+  max-width: 600px;
+  margin: 0;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
 }
 
-/*Our Team 'Person'*/
+/*Employee and Instagram Section*/
+#content-section {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 0px;
+}
+.content-holder {
+  background-color: #fff6eb;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 95%;
+}
+
+/*Buttons*/
+.tab-buttons {
+  height: 50px;
+  font-size: 25px;
+  display: flex;
+  width: 100%;
+
+}
+.button-class {
+  flex-grow: 1;
+  opacity: 1;
+  border: 0;
+}
+
+/*Our Baristas*/
 .person {
   text-align: center;
   margin-bottom: 40px;
@@ -123,11 +86,6 @@ hr {
   overflow: hidden;
   margin: 0 auto 0 auto;
 }
-.img-container img{
-  width:100%;
-  height: auto;
-
-}
 .person .name {
   font-size: 24px;
   color: #373a3c;
@@ -140,4 +98,24 @@ hr {
   color: #c3c3c3;
   margin-bottom: 30px;
   letter-spacing: 2px;
+}
+.img-container img{
+  width:100%;
+  height: auto;
+
+}
+
+/*Instagram Section*/
+#insta-section {
+  display: none;
+  text-align: center;
+  padding-bottom: 0px;
+  align-content: center;
+  justify-content: center;
+}
+.insta-widget-grid {
+  width: 60%;
+  height: 750px;
+  border:none;
+  overflow:hidden;
 }
